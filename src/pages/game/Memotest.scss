@@ -1,0 +1,54 @@
+.memotest-page{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  background-image: url('../../img/game/fondo\ juego.png');
+  background-position: center;
+  background-size: cover;
+  height: 100dvh;
+
+  .table-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15dvh;
+  }
+
+  .header{
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3dvh;
+  
+    .timer{
+        width: 100%;
+        height: 6vw;
+        margin-top: 2dvh; 
+    }
+  
+    img{
+      height: 4dvh;
+    }
+  }
+  
+  .decoration{
+    width: 100%;
+    margin-top: 4dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10dvh;
+  
+    img{
+        width: 60vw;
+    }
+  }
+}
+
+
+
+

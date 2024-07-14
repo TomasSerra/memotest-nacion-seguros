@@ -9,4 +9,4 @@ root.render(
     <App />
 );
 
-serviceWorkerRegistration.register();
+serviceWorkerRegistration.unregister();

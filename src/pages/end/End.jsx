@@ -8,11 +8,11 @@ import Logo from '../../img/logo.png'
 function End({goToNextPage, hasWin}) {
   const [width, height] = useWindowSize()
 
-  /*useEffect(() => {
+  useEffect(() => {
     setTimeout(() => {
       goToNextPage()
     }, 6000)
-  }, [])*/
+  }, [])
 
   return (
     <div className='end-page'>

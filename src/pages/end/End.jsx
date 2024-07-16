@@ -4,6 +4,8 @@ import Confetti from 'react-confetti'
 import {useWindowSize} from '@react-hook/window-size'
 
 import Logo from '../../img/logo.png'
+import Trofeo from '../../img/end/trofeo.png'
+import Reloj from '../../img/end/reloj.png'
 
 function End({goToNextPage, hasWin}) {
   const [width, height] = useWindowSize()
@@ -33,6 +35,7 @@ function End({goToNextPage, hasWin}) {
             ¡Ganaste!
           </h1>
           <p>Encontraste todos los pares de productos.</p>
+          <img className='trofeo' src={Trofeo}/>
         </>
         :
         <>
@@ -40,6 +43,7 @@ function End({goToNextPage, hasWin}) {
             ¡Se te acabó el tiempo!
           </h2>
           <p>Podes volver a participar.</p>
+          <img className='reloj' src={Reloj}/>
         </>
       }
       </div>

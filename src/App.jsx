@@ -13,7 +13,7 @@ import F6 from './img/fichas/6.png'
 
 function App() {
 
-  const[page, setPage] = useState(0);
+  const[page, setPage] = useState(2);
   const[time, setTime] = useState(55);
 
   const[points, setPoints] = useState(0);

@@ -50,10 +50,40 @@
             text-align: center;
         }
 
-        img{
+        .reloj{
             width: 55vw;
-            margin-top: 5dvh;
+            margin-top: 10dvh;
             margin-bottom: 2dvh;
+        }
+
+
+
+        .trofeo-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin-top: 10dvh;
+
+            .trofeo{
+                width: 35vw;
+                margin-top: 5dvh;
+                margin-bottom: 2dvh;
+                position: absolute;
+                z-index: 1;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+
+            .fondo-trofeo{
+                width: 55vw;
+                margin-top: 5dvh;
+                margin-bottom: 2dvh;
+                animation: giro 20s linear infinite;
+            }
         }
 
         p{
@@ -65,5 +95,14 @@
             margin: 0;
             margin-top: 2dvh;
         }
+    }
+}
+
+@keyframes giro {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }

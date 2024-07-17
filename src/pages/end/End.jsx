@@ -6,15 +6,16 @@ import {useWindowSize} from '@react-hook/window-size'
 import Logo from '../../img/logo.png'
 import Trofeo from '../../img/end/trofeo.png'
 import Reloj from '../../img/end/reloj.png'
+import Fondo from '../../img/end/fondo-trofeo.png'
 
 function End({goToNextPage, hasWin}) {
   const [width, height] = useWindowSize()
 
-  useEffect(() => {
+  /*useEffect(() => {
     setTimeout(() => {
       goToNextPage()
     }, 6000)
-  }, [])
+  }, [])*/
 
   return (
     <div className='end-page'>
@@ -35,7 +36,10 @@ function End({goToNextPage, hasWin}) {
             ¡Ganaste!
           </h1>
           <p>Encontraste todos los pares de productos.</p>
-          <img className='trofeo' src={Trofeo}/>
+          <div className="trofeo-container">
+            <img className="fondo-trofeo" src={Fondo}/>
+            <img className="trofeo" src={Trofeo}/>
+          </div>
         </>
         :
         <>

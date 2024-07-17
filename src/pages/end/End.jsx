@@ -11,11 +11,11 @@ import Fondo from '../../img/end/fondo-trofeo.png'
 function End({goToNextPage, hasWin}) {
   const [width, height] = useWindowSize()
 
-  /*useEffect(() => {
+  useEffect(() => {
     setTimeout(() => {
       goToNextPage()
     }, 6000)
-  }, [])*/
+  }, [])
 
   return (
     <div className='end-page'>
